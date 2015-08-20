@@ -3,6 +3,7 @@ AllCops:
     # Ignore HTML related things
     - '**/*.erb'
     # Ignore vendored gems
+    - 'modules/**/*'
     - 'vendor/**/*'
     # Ignore code from test fixtures
     - 'spec/fixtures/**/*'

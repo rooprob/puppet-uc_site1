@@ -6,7 +6,6 @@ require 'puppet/version'
 require 'puppet/vendor/semantic/lib/semantic' unless Puppet.version.to_f < 3.6
 require 'puppet-lint/tasks/puppet-lint'
 require 'puppet-syntax/tasks/puppet-syntax'
-require 'metadata-json-lint/rake_task'
 require 'rubocop/rake_task'
 
 # These gems aren't always present, for instance
@@ -19,6 +18,7 @@ end
 RuboCop::RakeTask.new
 
 exclude_paths = [
+  "modules/**/*",
   "bundle/**/*",
   "pkg/**/*",
   "vendor/**/*",
@@ -51,7 +51,6 @@ end
 
 desc "Run syntax, lint, and spec tests."
 task :test => [
-  :metadata_lint,
   :syntax,
   :lint,
   :rubocop,

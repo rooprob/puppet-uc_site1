@@ -4,17 +4,5 @@
 # It sets variables according to platform.
 #
 class uc_site1::params {
-  case $::osfamily {
-    'Debian': {
-      $package_name = 'uc_site1'
-      $service_name = 'uc_site1'
-    }
-    'RedHat', 'Amazon': {
-      $package_name = 'uc_site1'
-      $service_name = 'uc_site1'
-    }
-    default: {
-      fail("${::operatingsystem} not supported")
-    }
-  }
+  $site_name = 'example.site.com'
 }

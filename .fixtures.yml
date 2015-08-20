@@ -1,5 +1,20 @@
 fixtures:
-  repositories:
-    stdlib: "https://github.com/puppetlabs/puppetlabs-stdlib.git"
   symlinks:
     uc_site1: "#{source_dir}"
+    apache: "#{source_dir}/modules/apache"
+    concat: "#{source_dir}/modules/concat"
+    hardening_stdlib: "#{source_dir}/modules/hardening_stdlib"
+    limits: "#{source_dir}/modules/limits"
+    motd: "#{source_dir}/modules/motd"
+    mysql: "#{source_dir}/modules/mysql"
+    mysql_hardening: "#{source_dir}/modules/mysql_hardening"
+    ntp: "#{source_dir}/modules/ntp"
+    os_hardening: "#{source_dir}/modules/os_hardening"
+    php: "#{source_dir}/modules/php"
+    rsyslog: "#{source_dir}/modules/rsyslog"
+    ssh: "#{source_dir}/modules/ssh"
+    ssh_hardening: "#{source_dir}/modules/ssh_hardening"
+    staging: "#{source_dir}/modules/staging"
+    stdlib: "#{source_dir}/modules/stdlib"
+    sysctl: "#{source_dir}/modules/sysctl"
+    vsftpd: "#{source_dir}/modules/vsftpd"

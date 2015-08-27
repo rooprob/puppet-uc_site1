@@ -10,3 +10,4 @@ HOSTS:
 CONFIG:
   log_level: verbose
   type: foss
+  package_proxy: http://10.0.2.3:3128

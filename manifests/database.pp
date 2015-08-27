@@ -10,6 +10,8 @@
 class uc_site1::database() {
   # validate parameters here
 
+  class{ '::mysql::client': }
+  class{ '::mysql::bindings': }
   class{ '::mysql::server':
     root_password    => $::uc_site1::db_root_passwd,
     override_options => $::uc_site1::db_options,

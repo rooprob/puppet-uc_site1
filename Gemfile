@@ -1,5 +1,4 @@
 source "https://rubygems.org"
-
 group :test do
   gem "vagrant-wrapper"
   gem "rake"
@@ -21,6 +20,7 @@ group :test do
 end
 
 group :development do
+  gem "pry"
   gem "travis"
   gem "travis-lint"
   gem "puppet-blacksmith"
@@ -29,7 +29,9 @@ group :development do
 end
 
 group :system_tests do
-  gem "beaker"
-  gem "beaker-rspec"
+  gem "beaker",
+      path: '/tamasiorg/ruby/beaker'
+  gem "beaker-rspec",
+      path: '/tamasiorg/ruby/beaker-rspec'
   gem "beaker-puppet_install_helper"
 end

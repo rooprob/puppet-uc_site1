@@ -9,7 +9,8 @@ mod 'saz-rsyslog'
 mod 'saz-limits'
 mod 'saz-ntp'
 mod 'saz-motd'
-mod 'hardening-os_hardening'
+mod 'hardening-os_hardening',
+    path: '/tamasiorg/puppet-modules/puppet-os-hardening'
 mod 'hardening-ssh_hardening'
 mod 'hardening-mysql_hardening'
 

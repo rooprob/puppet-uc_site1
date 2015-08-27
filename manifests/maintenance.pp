@@ -10,6 +10,10 @@
 class uc_site1::maintenance () {
   # validate parameters here
 
-  class { '::os_hardening': }
+  class { '::os_hardening':
+    ignore_users => [
+      'www-data'
+    ]
+  }
   class { '::ssh_hardening': }
 }

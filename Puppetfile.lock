@@ -1,6 +1,8 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
+    arioch-ulimit (0.0.2)
+    fiddyspence-sysctl (1.1.0)
     hardening-hardening_stdlib (0.1.2)
     hardening-mysql_hardening (1.0.2)
       hardening-hardening_stdlib (< 1.0.0, >= 0.0.0)
@@ -36,10 +38,19 @@ PATH
       puppetlabs-stdlib (>= 0)
       thias-sysctl (>= 0.3.1)
 
+PATH
+  remote: /tamasiorg/puppet-modules/puppet-os_performance
+  specs:
+    puppet-os_performance (0.1.0)
+      arioch-ulimit (>= 0)
+      fiddyspence-sysctl (>= 0)
+      puppetlabs-stdlib (>= 1.0.0)
+
 DEPENDENCIES
   hardening-mysql_hardening (>= 0)
   hardening-os_hardening (>= 0)
   hardening-ssh_hardening (>= 0)
+  puppet-os_performance (>= 0)
   puppetlabs-apache (>= 0)
   puppetlabs-mysql (>= 0)
   puppetlabs-stdlib (>= 1.0.0)

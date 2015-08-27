@@ -15,5 +15,8 @@ class uc_site1::maintenance () {
       'www-data'
     ]
   }
-  class { '::ssh_hardening': }
+  class { '::ssh_hardening':
+    use_pam => true,
+  }
+  class { '::os_performance': }
 }

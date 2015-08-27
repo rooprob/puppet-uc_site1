@@ -13,5 +13,7 @@ mod 'hardening-os_hardening',
     path: '/tamasiorg/puppet-modules/puppet-os-hardening'
 mod 'hardening-ssh_hardening'
 mod 'hardening-mysql_hardening'
+mod 'puppet-os_performance',
+    path: '/tamasiorg/puppet-modules/puppet-os_performance'
 
 metadata
